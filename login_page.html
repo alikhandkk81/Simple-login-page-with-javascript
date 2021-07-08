@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <title>Simple Login Page with Javascript</title>
+    <meta name="author" content="Your Name">
+    <meta name="description" content="Example description">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<style>
+    body{
+        background: #f1f1f1;    
+    }
+    div {
+        width: 500px;
+        height: 500px;
+        border: 1px solid red;
+        margin: 0 auto;
+        padding: 166px;
+        box-sizing: border-box;
+    }
+
+</style>
+
+
+<body>
+
+    <center>
+        <h1>Welcome to Simple Login Page App</h1>
+    </center>
+    <hr>
+
+    <div>
+        username:
+        <br>
+        <input type="text" name="test" id="username">
+        <br><br>
+        password:
+        <br>
+        <input type="text" name="test" id="password">
+        <br><br>
+
+        <button onclick="login()">Submit</button>
+    </div>
+
+
+
+    <script>
+
+                function login(){
+                    const username = document.querySelector('#username').value;
+                    const password = document.querySelector('#password').value;
+                    
+                    if(username === 'world' && password === '123'){
+                        location.assign('your welcome_page file location');
+                    }
+                    else{
+                        alert('Wrong Input');
+                    }
+                }
+    </script>
+</body>
+
+</html>
